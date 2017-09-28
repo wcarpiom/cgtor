@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code", "Code", "{196C60EF-7CBE-4CAA-AA41-507CD41FEF86}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{F20CAE94-6315-475A-9E2D-6B9A308F7C4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{DC340C17-ABA7-45ED-972F-6F5BDD775997}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Root", "Root", "{017D39AD-F981-4E55-98EA-1AA63601BE8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cgtor.Lib", "..\..\Lib\Cgtor.Lib\Cgtor.Lib.csproj", "{EFF7F577-E838-40C5-8998-AC3C1F6AB679}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cgtor.Web", "Cgtor.Web\Cgtor.Web.csproj", "{88BDBCAA-9515-4972-B7B3-32EE0116C36A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cgtor.Lib.Test", "..\..\Test\Cgtor.Lib.Test\Cgtor.Lib.Test.csproj", "{A69E5190-4AFC-47C3-942B-5141F329BEF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFF7F577-E838-40C5-8998-AC3C1F6AB679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFF7F577-E838-40C5-8998-AC3C1F6AB679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFF7F577-E838-40C5-8998-AC3C1F6AB679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFF7F577-E838-40C5-8998-AC3C1F6AB679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88BDBCAA-9515-4972-B7B3-32EE0116C36A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88BDBCAA-9515-4972-B7B3-32EE0116C36A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88BDBCAA-9515-4972-B7B3-32EE0116C36A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88BDBCAA-9515-4972-B7B3-32EE0116C36A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A69E5190-4AFC-47C3-942B-5141F329BEF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A69E5190-4AFC-47C3-942B-5141F329BEF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A69E5190-4AFC-47C3-942B-5141F329BEF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A69E5190-4AFC-47C3-942B-5141F329BEF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DC340C17-ABA7-45ED-972F-6F5BDD775997} = {196C60EF-7CBE-4CAA-AA41-507CD41FEF86}
+		{017D39AD-F981-4E55-98EA-1AA63601BE8F} = {196C60EF-7CBE-4CAA-AA41-507CD41FEF86}
+		{EFF7F577-E838-40C5-8998-AC3C1F6AB679} = {DC340C17-ABA7-45ED-972F-6F5BDD775997}
+		{88BDBCAA-9515-4972-B7B3-32EE0116C36A} = {017D39AD-F981-4E55-98EA-1AA63601BE8F}
+		{A69E5190-4AFC-47C3-942B-5141F329BEF7} = {F20CAE94-6315-475A-9E2D-6B9A308F7C4C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4C2FAB1-35EC-4F31-BBDB-C8658A494C74}
+	EndGlobalSection
+EndGlobal
