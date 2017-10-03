@@ -1,0 +1,42 @@
+﻿@model Cgtor.Web.ViewModels.GeneratedModelCodeViewModel
+@{
+    ViewBag.Title = "Code Generator";
+}
+
+<script src="~/Scripts/Utils/utils.js"></script>
+<h2>Code Generator</h2>
+
+@using (Html.BeginForm("GenerateModel", "CodeGenerator", FormMethod.Post))
+{
+    <form class="form-horizontal">
+
+        <div class="txtboxform" id="txtboxConnectionString">
+            Connection string: @Html.TextBox("connectionString", Model.DefaultConnectionString)
+        </div>
+
+        <div class="txtboxform">
+            Store procedure name: @Html.TextBox("dbObjectName", Model.DefaultStoredProcedure)
+        </div>
+
+        <div class="txtboxform">
+            Service type: @Html.EnumDropDownListFor(model => model.CodeServiceType, null
+                              , new { onchange = "onChange()" })
+        </div>
+        <div>
+            <input type="submit" class="btn" value="Generate" />
+        </div>
+    </form>
+
+}
+
+@if (Model.ModelCode != null)
+{
+    <h3>Model</h3>
+    <div>
+        <div>
+                <div>
+                    <textarea id="finalModelCode" name="finalModelCode" class="txtareaModelCode" rows="10" cols="100">@Model.ModelCode</textarea>
+                </div>
+        </div>
+    </div>
+}

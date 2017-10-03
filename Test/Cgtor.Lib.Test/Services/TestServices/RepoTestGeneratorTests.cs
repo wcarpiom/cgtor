@@ -153,16 +153,6 @@ namespace Cgtor.Lib.Test.Services.TestServices
             testClass.AppendLine("      _target = new RategroupdefRepo();");
             testClass.AppendLine("  }");
             testClass.AppendLine();
-            testClass.AppendLine("  [OneTimeTearDown]");
-            testClass.AppendLine("  public void TearDown()");
-            testClass.AppendLine("  {");
-            testClass.AppendLine("      if (_scope != null)");
-            testClass.AppendLine("      {");
-            testClass.AppendLine("          _scope.Dispose();");
-            testClass.AppendLine("          _scope = null;");
-            testClass.AppendLine("      }");
-            testClass.AppendLine("  }");
-            testClass.AppendLine();
             testClass.AppendLine("  [Test]");
             testClass.AppendLine("  public void Test_RategroupdefRepo_Methods()");
             testClass.AppendLine("  {");

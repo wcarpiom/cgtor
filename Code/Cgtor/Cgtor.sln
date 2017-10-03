@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.10
+VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code", "Code", "{196C60EF-7CBE-4CAA-AA41-507CD41FEF86}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cgtor.Web", "Cgtor.Web\Cgtor.Web.csproj", "{88BDBCAA-9515-4972-B7B3-32EE0116C36A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cgtor.Lib.Test", "..\..\Test\Cgtor.Lib.Test\Cgtor.Lib.Test.csproj", "{A69E5190-4AFC-47C3-942B-5141F329BEF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cgtor.Web.Test", "..\..\Test\Cgtor.Web.Test\Cgtor.Web.Test.csproj", "{403BD510-3E64-4191-B984-8A7AD01628F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{A69E5190-4AFC-47C3-942B-5141F329BEF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A69E5190-4AFC-47C3-942B-5141F329BEF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A69E5190-4AFC-47C3-942B-5141F329BEF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{403BD510-3E64-4191-B984-8A7AD01628F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{403BD510-3E64-4191-B984-8A7AD01628F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{403BD510-3E64-4191-B984-8A7AD01628F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{403BD510-3E64-4191-B984-8A7AD01628F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +51,7 @@ Global
 		{EFF7F577-E838-40C5-8998-AC3C1F6AB679} = {DC340C17-ABA7-45ED-972F-6F5BDD775997}
 		{88BDBCAA-9515-4972-B7B3-32EE0116C36A} = {017D39AD-F981-4E55-98EA-1AA63601BE8F}
 		{A69E5190-4AFC-47C3-942B-5141F329BEF7} = {F20CAE94-6315-475A-9E2D-6B9A308F7C4C}
+		{403BD510-3E64-4191-B984-8A7AD01628F4} = {F20CAE94-6315-475A-9E2D-6B9A308F7C4C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A4C2FAB1-35EC-4F31-BBDB-C8658A494C74}

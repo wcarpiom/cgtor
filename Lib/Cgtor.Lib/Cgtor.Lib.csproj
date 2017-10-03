@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Controllers\ModelPropertyController.cs" />
     <Compile Include="DbServices\SpReadingService.cs" />
+    <Compile Include="Models\CodeServiceType.cs" />
     <Compile Include="Models\ModelProperty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CodeServices\ICodeGeneratorService.cs" />
