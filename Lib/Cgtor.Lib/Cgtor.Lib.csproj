@@ -36,6 +36,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,13 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ModelPropertyController.cs" />
     <Compile Include="DbServices\SpReadingService.cs" />
     <Compile Include="Models\ModelProperty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CodeServices\ICodeGeneratorService.cs" />
+    <Compile Include="Services\CodeServices\TableModelGenerator.cs" />
     <Compile Include="Services\IGeneratorService.cs" />
     <Compile Include="Services\TestServices\ITestGeneratorService.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

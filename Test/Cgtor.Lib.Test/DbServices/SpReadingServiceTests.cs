@@ -50,7 +50,7 @@ namespace Cgtor.Lib.Test.DbServices
             var command = new SqlCommand();
             _testSqlParameterCollection = command.Parameters;
 
-            _dbSysUtilsMock.Setup(d => d.GetParametersFromSp(_connectionString, _dbObjectName)).Returns(_testSqlParameters);
+            _dbSysUtilsMock.Setup(d => d.GetParametersFromSP(_connectionString, _dbObjectName)).Returns(_testSqlParameters);
             _dbSysUtilsMock.Setup(d => d.SetParametersToNull(_testSqlParameterCollection));
             _typeUtilsMock.SetupSequence(m => m.GetFriendlyNameByType(It.IsAny<Type>()))
                 .Returns("int")
