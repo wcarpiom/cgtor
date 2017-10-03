@@ -51,7 +51,7 @@ namespace Cgtor.Lib.DbServices
                 using (var command = new SqlCommand(DbObjectName, connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
-                    var parameterList = _dbSysUtils.GetParametersFromSp(ConnectionString, DbObjectName).ToArray();
+                    var parameterList = _dbSysUtils.GetParametersFromSP(ConnectionString, DbObjectName).ToArray();
 
                     command.Parameters.Clear();
                     command.Parameters.AddRange(parameterList);
