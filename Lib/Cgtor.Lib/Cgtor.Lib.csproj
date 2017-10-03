@@ -54,6 +54,7 @@
     <Compile Include="Services\CodeServices\TableModelGenerator.cs" />
     <Compile Include="Services\IGeneratorService.cs" />
     <Compile Include="Services\TestServices\ITestGeneratorService.cs" />
+    <Compile Include="Services\TestServices\RepoTestGenerator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
