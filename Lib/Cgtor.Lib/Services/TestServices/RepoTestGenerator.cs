@@ -58,8 +58,6 @@ namespace Cgtor.Lib.Services.TestServices
             stringBuilder.AppendLine("  {");
             stringBuilder.AppendLine("      //Arrange");
             stringBuilder.AppendLine($"      const int test{firstProperty.PropertyName.TransformTo(CaseType.SentenceCase)} = int.MaxValue;");
-            stringBuilder.AppendLine($"      var {tableName.ToLower()}Repo = new {tableName}Repo();");
-            stringBuilder.AppendLine($"      {tableName.ToLower()}Repo.Save(new Table{tableName}" + " { " + $"{firstProperty.PropertyName.TransformTo(CaseType.SentenceCase)} = test{firstProperty.PropertyName.TransformTo(CaseType.SentenceCase)}" + " });");
             stringBuilder.AppendLine();
             stringBuilder.AppendLine("      //Act");
             stringBuilder.AppendLine($"      _target.Save(new Table{tableName}");

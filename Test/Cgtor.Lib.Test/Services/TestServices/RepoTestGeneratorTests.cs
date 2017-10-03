@@ -103,8 +103,6 @@ namespace Cgtor.Lib.Test.Services.TestServices
             testClass.AppendLine("  {");
             testClass.AppendLine("      //Arrange");
             testClass.AppendLine("      const int testRate_group_code = int.MaxValue;");
-            testClass.AppendLine("      var rategroupdefRepo = new RategroupdefRepo();");
-            testClass.AppendLine("      rategroupdefRepo.Save(new TableRategroupdef { Rate_group_code = testRate_group_code });");
             testClass.AppendLine();
             testClass.AppendLine("      //Act");
             testClass.AppendLine("      _target.Save(new TableRategroupdef");
@@ -158,8 +156,6 @@ namespace Cgtor.Lib.Test.Services.TestServices
             testClass.AppendLine("  {");
             testClass.AppendLine("      //Arrange");
             testClass.AppendLine("      const int testRate_group_code = int.MaxValue;");
-            testClass.AppendLine("      var rategroupdefRepo = new RategroupdefRepo();");
-            testClass.AppendLine("      rategroupdefRepo.Save(new TableRategroupdef { Rate_group_code = testRate_group_code });");
             testClass.AppendLine();
             testClass.AppendLine("      //Act");
             testClass.AppendLine("      _target.Save(new TableRategroupdef");
@@ -179,6 +175,6 @@ namespace Cgtor.Lib.Test.Services.TestServices
 
             // Assert
             Assert.IsTrue(testClass.Equals(result));
-        }  
+        }
     }
 }
